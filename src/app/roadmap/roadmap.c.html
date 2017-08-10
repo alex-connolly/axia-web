@@ -1,0 +1,16 @@
+<h2>Axia Roadmap</h2>
+<div>
+    <div class="box" *ngFor="let v of versions">
+        <h2>{{v.name}}</h2>
+        <table width="100%" class="white-table">
+            <tr *ngFor="let p of v.projects">
+                <td color="green">Complete</td>
+                <td>{{p.name}}</td>
+                <td>
+                    <a href="{{p.github}}" target="_self"><img height="16px" width="16px" src="assets/github_64px.png" alt="Github"></a>
+                    <a href="{{p.slack}}" target="_self" ><img height="32px" width="32px" src="assets/slack_64px.png" alt="Slack"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

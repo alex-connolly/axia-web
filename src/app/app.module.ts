@@ -1,20 +1,29 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { HttpModule, JsonpModule } from '@angular/http';
+import { CommonModule } from '@angular/common';
 
-import { AppComponent } from './app.component';
+import './rxjs-extensions';
+import { AppComponent } from './app.c';
+import { routing, routedComponents } from './app.routing';
+import {LoginComponent} from "./login/login.c";
+import {FooterComponent} from "./fixed/footer/footer.c";
+import {HeaderComponent} from "./fixed/header/header.c";
+
+export const addedComponents = [ LoginComponent, HeaderComponent, FooterComponent];
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    routing,
+    HttpModule,
+    JsonpModule,
+    CommonModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  declarations: [ AppComponent, routedComponents, addedComponents],
+  providers: [ ],
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
