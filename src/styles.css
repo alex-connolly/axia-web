@@ -4,8 +4,8 @@
 @font-face { font-family: Code; font-weight: bold; src: url('assets/CODE Bold.otf');}
 
 body {
-    background-color: rgb(48, 52, 52);
-    color: white;
+    background-color: #FFFFFF;
+    color: rgb(48, 52, 52);
     font-family: proxima-nova, sans-serif;
     font-style: normal;
     font-weight: 100;

@@ -10,3 +10,16 @@
 * {
     margin-top:20px;
 }
+
+.footer-title {
+    font-size: small;
+    text-transform: uppercase;
+}
+
+.footer-item {
+    font-size: small;
+}
+
+table {
+    margin: 50px;
+}
