@@ -1,1 +1,45 @@
 <h2>Anonymity</h2>
+
+The nature of a public, distributed ledger in which transactions may be verified by third-parties is at odds with the desire for personal anonymity when engaging in .
+
+<h2>State of the Game</h2>
+
+Several cryptocurrency protocols have provided mechanisms for the . ZCash's implementation,
+
+<h2>zkSNARKs</h2>
+
+Zero-Knowledge Succinct Non-Interactive Arguments of Knowledge (zkSNARKs), are a mechanism for demonstrating that someone (the Prover) is in possession of some 'secret' knowledge, without revealing the content of this secret.
+
+There are three primary steps .
+
+Generate(Circuit, Random) => (Prover Key, Verification Key)
+G(C, L) => (pk, vk)
+
+P(pk, x, w) => prf
+
+Verify()
+V(vk, prf) => bool
+
+
+<h2>Proof of Possession</h2>
+
+When a transaction is sent from one party to another, it is only valid if the sender has the required balance to fund the payment.
+
+
+
+In essence, this protocol requires a valid transaction to be accompanied by two elements:
+
+<ul>
+    <li>Proof of Ownership</li>
+    <li>Proof of Uniqueness</li>
+</ul>
+
+The proof of ownership requirement is that the .
+
+The uniqueness requirement is that this proof of ownership requirement has not been . Valid transactions to the chain must contain .
+When verifying a transaction, the Verifier checks the chain for the cancellation. If it has been previously published, then while the Prover clearly owned the
+currency at one point, they
+
+<br>
+
+It is thus possible for account-based transactions to be anonymous.

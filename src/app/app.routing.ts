@@ -11,6 +11,7 @@ import {AccessbilityComponent} from "./technology/accessibility/accessibility.c"
 import {ConsensusComponent} from "./technology/consensus/consensus.c";
 import {ContractsComponent} from "./technology/contracts/contracts.c";
 import {HierarchiesComponent} from "./technology/hierarchies/hierarchies.c";
+import {ComparisonComponent} from "./about/comparison/comparison.c";
 import {AppComponent} from "./app.c";
 
 const appRoutes: Routes = [
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     { path : 'resources/assets', component: AssetsComponent},
     { path : 'about/team', component: TeamComponent},
     { path : 'about/faq', component: FAQComponent},
+    { path : 'about/comparison', component: ComparisonComponent},
     { path : 'technology/scalability', component: ScalabilityComponent},
     { path : 'technology/anonymity', component: AnonymityComponent},
     { path : 'technology/accessbility', component: AccessbilityComponent},
@@ -34,5 +36,5 @@ export const routedComponents = [
 	AppComponent, LandingComponent, RoadmapComponent, LegalComponent,
     AssetsComponent, TeamComponent, FAQComponent, ScalabilityComponent,
     AnonymityComponent, AccessbilityComponent, ConsensusComponent,
-    ContractsComponent, HierarchiesComponent
+    ContractsComponent, HierarchiesComponent, ComparisonComponent
 ];

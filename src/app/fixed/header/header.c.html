@@ -24,6 +24,9 @@
             <a class="navbar-item " [routerLink]="['/about/team']">
               Team
             </a>
+            <a class="navbar-item " [routerLink]="['/about/comparison']">
+              Why Axia?
+            </a>
         </div>
         </div>
       <div class="navbar-item has-dropdown is-hoverable">
@@ -53,13 +56,8 @@
           <div class="navbar-item">
             <div>
               <p class="is-size-6-desktop">
-                <strong class="has-text-info">Prometheus</strong>
+                <a [routerLink]="['/roadmap']"><strong class="has-text-info" >Prometheus</strong></a>
               </p>
-
-                <small>
-                  <a class="view-all-versions" [routerLink]="['/roadmap']">Roadmap</a>
-                </small>
-
             </div>
           </div>
         </div>

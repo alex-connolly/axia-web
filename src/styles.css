@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face { font-family: Code; src: url('assets/CODE Light.otf'); }
+@font-face { font-family: Code; font-weight: bold; src: url('assets/CODE Bold.otf');}
+
 body {
     background-color: rgb(48, 52, 52);
     color: white;
@@ -8,11 +11,11 @@ body {
     font-weight: 100;
     height: 100%;
     overflow: auto;
-
 }
 
 html {
     overflow: hidden;
+    color: white;
     height: 100%;
 }
 
@@ -25,4 +28,8 @@ router-outlet {
 
 .centered {
     text-align: center;
+}
+
+.code-font {
+    font-family: Code;
 }
